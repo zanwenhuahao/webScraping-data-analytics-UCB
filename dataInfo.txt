@@ -1,0 +1,127 @@
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 34672 entries, 0 to 34671
+Data columns (total 6 columns):
+Name             34672 non-null object
+Title            34672 non-null object
+Major            23693 non-null object
+Email            34672 non-null object
+Mailbox          3828 non-null object
+Miscellaneous    21 non-null object
+dtypes: object(6)
+memory usage: 1.6+ MB
+None
+There are 122 different majors.
+There are a total of 3810 grad students.
+There are a total of 30862 undergrad students.
+    Unnamed: 0                           Major  Number of Student
+5            5          Mechanical Engineering                736
+7            7  Aerospace Engineering Sciences                711
+8            8                Computer Science                708
+28          28               Civil Engineering                256
+30          30          Electrical Engineering                234
+32          32            Chemical Engineering                213
+38          38   Electrical & Comp Engineering                171
+44          44       Environmental Engineering                148
+47          47          Engineering Management                127
+48          48       Architectural Engineering                126
+59          59       Engineering - Open Option                 70
+70          70             Engineering Physics                 51
+91          91            Computer Engineering                  5
+    Unnamed: 0                     Major  Number of Student
+2            2                 Economics               1261
+4            4                   Finance                926
+9            9                Management                667
+13          13                 Marketing                565
+14          14                Accounting                532
+20          20    Business - Open Option                375
+43          43  Master of Business Admin                150
+45          45  Professional MBA Program                140
+47          47    Engineering Management                127
+92          92     Accounting - Taxation                  4
+94          94   Business Administration                  4
+     Unnamed: 0                          Major  Number of Student
+63           63                Music Education                 64
+69           69  Educ-Curriculum & Instruction                 52
+81           81           Elementary Education                 17
+85           85   Educ Foundations, Pol & Prac                 11
+90           90     Educ Psychological Studies                  6
+93           93    Music Educ-Elem Sec or K-12                  4
+111         111  Educ-Research & Eval Methodol                  1
+    Unnamed: 0                           Major  Number of Student
+0            0                      Psychology               1714
+1            1          Integrative Physiology               1379
+10          10  Ecology & Evolutionary Biology                645
+11          11           Environmental Studies                640
+18          18                         Physics                392
+25          25                       Astronomy                324
+36          36                       Chemistry                182
+46          46                         Geology                131
+70          70             Engineering Physics                 51
+     Unnamed: 0                          Major  Number of Student
+21           21                    Studio Arts                366
+40           40       Technology, Arts & Media                164
+52           52                    Art History                 98
+54           54                        Theatre                 83
+58           58                          Music                 74
+62           62                          Dance                 67
+63           63                Music Education                 64
+75           75                   Music - Arts                 34
+93           93    Music Educ-Elem Sec or K-12                  4
+102         102                  Media Studies                  3
+108         108             Music - Undeclared                  1
+115         115  Tech, Media & Society (ATLAS)                  1
+     Unnamed: 0                       Major  Number of Student
+11           11       Environmental Studies                640
+15           15                   Sociology                516
+24           24                Film Studies                341
+26           26                     History                315
+27           27                Anthropology                281
+42           42                   Geography                155
+51           51              Ethnic Studies                100
+52           52                 Art History                 98
+55           55                  Humanities                 80
+65           65                    Classics                 58
+66           66            Germanic Studies                 54
+72           72             Women's Studies                 41
+76           76              Design Studies                 34
+78           78               Asian Studies                 28
+79           79         Distributed Studies                 21
+82           82           Religious Studies                 17
+83           83             Russian Studies                 17
+90           90  Educ Psychological Studies                  6
+98           98  Social Studies - Secondary                  3
+102         102               Media Studies                  3
+114         114      Comparative Literature                  1
+116         116        Scandinavian Studies                  1
+There are a total of 3556 Engineering Majors
+There are a total of 4751 Business Majors
+There are a total of 155 Education Majors
+There are a total of 5458 Science Majors
+There are a total of 959 Fine Arts Majors
+There are a total of 2810 Liberal Arts Majors
+                   Name    Title  ...  lastName middleName
+0      Katharine Hobart  Student  ...    Hobart           
+1       Aadhit Gopinath  Student  ...  Gopinath           
+2            Aaron Hong  Student  ...      Hong           
+3        Aakarsh Fadnis  Student  ...    Fadnis           
+4         Aakriti Aryal  Student  ...     Aryal           
+5        Aaksha Jaywant  Student  ...   Jaywant           
+6         Aana Williams  Student  ...  Williams           
+7         Aanvi Guliani  Student  ...   Guliani           
+8    Aariz Anis Gawandi  Student  ...   Gawandi       Anis
+9  Aaron Colton Abraham  Student  ...   Abraham     Colton
+
+[10 rows x 9 columns]
+   firstName  ... Department
+0  Katharine  ...        NaN
+1     Aadhit  ...        NaN
+2      Aaron  ...        NaN
+3    Aakarsh  ...        NaN
+4    Aakriti  ...        NaN
+5     Aaksha  ...        NaN
+6       Aana  ...        NaN
+7      Aanvi  ...        NaN
+8      Aariz  ...        NaN
+9      Aaron  ...        NaN
+
+[10 rows x 8 columns]

@@ -1,0 +1,3888 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html class="iem7"  lang="en" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"  lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"  lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"  lang="en" dir="ltr"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!-->
+<html dir="ltr" lang="en" xmlns:article="http://ogp.me/ns/article#" xmlns:book="http://ogp.me/ns/book#" xmlns:og="http://ogp.me/ns#" xmlns:product="http://ogp.me/ns/product#" xmlns:profile="http://ogp.me/ns/profile#" xmlns:video="http://ogp.me/ns/video#">
+ <!--<![endif]-->
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <link href="https://www.colorado.edu/profiles/express/themes/ucb/apple-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"/>
+  <link href="https://www.colorado.edu/profiles/express/themes/ucb/apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"/>
+  <link href="https://www.colorado.edu/profiles/express/themes/ucb/apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <script type="text/javascript">
+   (window.NREUM||(NREUM={})).loader_config={licenseKey:"77bdf6c909",applicationID:"166418094"};window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var i=e[t]={exports:{}};n[t][0].call(i.exports,function(e){var i=n[t][1][e];return r(i||e)},i,i.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(n,e,t){function r(){}function i(n,e,t){return function(){return o(n,[u.now()].concat(f(arguments)),e?null:this,t),e?void 0:this}}var o=n("handle"),a=n(4),f=n(5),c=n("ee").get("tracer"),u=n("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(n,e){s[e]=i(d+e,!0,"api")}),s.addPageAction=i(d+"addPageAction",!0),s.setCurrentRouteName=i(d+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(n,e){var t={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),n,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return e.apply(this,arguments)}catch(n){throw c.emit("fn-err",[arguments,this,n],t),n}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(n,e){m[e]=i(l+e)}),newrelic.noticeError=function(n,e){"string"==typeof n&&(n=new Error(n)),o("err",[n,u.now(),!1,e])}},{}],2:[function(n,e,t){function r(n,e){var t=n.getEntries();t.forEach(function(n){"first-paint"===n.name?a("timing",["fp",Math.floor(n.startTime)]):"first-contentful-paint"===n.name&&a("timing",["fcp",Math.floor(n.startTime)])})}function i(n){if(n instanceof c&&!s){var e,t=Math.round(n.timeStamp);e=t>1e12?Date.now()-t:f.now()-t,s=!0,a("timing",["fi",t,{type:n.type,fid:e}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var o,a=n("handle"),f=n("loader"),c=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){o=new PerformanceObserver(r);try{o.observe({entryTypes:["paint"]})}catch(u){}}if("addEventListener"in document){var s=!1,p=["click","keydown","mousedown","pointerdown","touchstart"];p.forEach(function(n){document.addEventListener(n,i,!1)})}}},{}],3:[function(n,e,t){function r(n,e){if(!i)return!1;if(n!==i)return!1;if(!e)return!0;if(!o)return!1;for(var t=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],4:[function(n,e,t){function r(n,e){var t=[],r="",o=0;for(r in n)i.call(n,r)&&(t[o]=e(r,n[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],5:[function(n,e,t){function r(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,i=t-e||0,o=Array(i<0?0:i);++r<i;)o[r]=n[e+r];return o}e.exports=r},{}],6:[function(n,e,t){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(n,e,t){function r(){}function i(n){function e(n){return n&&n instanceof r?n:n?c(n,f,o):o()}function t(t,r,i,o){if(!d.aborted||o){n&&n(t,r,i);for(var a=e(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(n,e){h[n]=v(n).concat(e)}function m(n,e){var t=h[n];if(t)for(var r=0;r<t.length;r++)t[r]===e&&t.splice(r,1)}function v(n){return h[n]||[]}function g(n){return p[n]=p[n]||i(t)}function w(n,e){u(n,function(n,t){e=e||"feature",y[t]=e,e in s||(s[e]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:e,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var f="nr@context",c=n("gos"),u=n(4),s={},p={},d=e.exports=i();d.backlog=s},{}],gos:[function(n,e,t){function r(n,e,t){if(i.call(n,e))return n[e];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return n[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(n,e,t){function r(n,e,t,r){i.buffer([n],r),i.emit(n,e,t)}var i=n("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(n,e,t){function r(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:a(n,o,function(){return i++})}var i=1,o="nr@id",a=n("gos");e.exports=r},{}],loader:[function(n,e,t){function r(){if(!x++){var n=E.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(n&&n.licenseKey&&n.applicationID&&e))return s.abort();u(y,function(e,t){n[e]||(n[e]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=l.createElement("script");t.src="https://"+n.agent,e.parentNode.insertBefore(t,e)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=n("handle"),u=n(4),s=n("ee"),p=n(3),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1153.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=e.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};n(1),n(2),l[m]?(l[m]("DOMContentLoaded",o,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",i),d[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=n(6)},{}],"wrap-function":[function(n,e,t){function r(n){return!(n&&n instanceof Function&&n.apply&&!n[a])}var i=n("ee"),o=n(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;e.exports=function(n,e){function t(n,e,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){d([u,"",[r,a,i],f])}s(e+"start",[r,a,i],f);try{return c=n.apply(a,r)}catch(p){throw s(e+"err",[r,a,p],f),p}finally{s(e+"end",[r,a,c],f)}}return r(n)?n:(e||(e=""),nrWrapper[a]=n,p(n,nrWrapper),nrWrapper)}function u(n,e,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<e.length;c++)f=e[c],a=n[f],r(a)||(n[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||e){var o=c;c=!0;try{n.emit(t,r,i,e)}catch(a){d([a,t,r,i])}c=o}}function p(n,e){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(n);return t.forEach(function(t){Object.defineProperty(e,t,{get:function(){return n[t]},set:function(e){return n[t]=e,e}})}),e}catch(r){d([r])}for(var i in n)f.call(n,i)&&(e[i]=n[i]);return e}function d(e){try{n.emit("internal-error",e)}catch(t){}}return n||(n=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);
+  </script>
+  <link href="//fast.fonts.net/cssapi/86696b99-fb1a-4964-9676-9233fb4fca8f.css" rel="stylesheet" type="text/css"/>
+  <link href="https://www.colorado.edu/sites/all/themes/homepage2019/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+  <link href="https://www.colorado.edu/profiles/express/themes/ucb/apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144"/>
+  <meta content="Drupal 7 (https://www.drupal.org)" name="generator"/>
+  <link href="https://www.colorado.edu/search" rel="canonical"/>
+  <link href="https://www.colorado.edu/node/10914" rel="shortlink"/>
+  <meta content="University of Colorado Boulder" property="og:site_name"/>
+  <meta content="article" property="og:type"/>
+  <meta content="https://www.colorado.edu/search" property="og:url"/>
+  <meta content="Search" property="og:title"/>
+  <meta content="2017-10-05T14:10:38-06:00" property="og:updated_time"/>
+  <meta content="summary" name="twitter:card"/>
+  <meta content="https://www.colorado.edu/search" name="twitter:url"/>
+  <meta content="Search" name="twitter:title"/>
+  <meta content="2017-10-05T14:10:38-06:00" property="article:published_time"/>
+  <meta content="2017-10-05T14:10:38-06:00" property="article:modified_time"/>
+  <title>
+   Search | University of Colorado Boulder
+  </title>
+  <meta content="width" name="MobileOptimized"/>
+  <meta content="true" name="HandheldFriendly"/>
+  <meta content="width=device-width" name="viewport"/>
+  <meta content="on" http-equiv="cleartype"/>
+  <link href="https://www.colorado.edu/sites/default/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="screen" rel="stylesheet" type="text/css"/>
+  <link href="https://www.colorado.edu/sites/default/files/css/css_Jdtt3Tl52dxH8dxYG3LDxk_0yM3d6kCB5xso7BSBjjU.css" media="screen" rel="stylesheet" type="text/css"/>
+  <link href="https://www.colorado.edu/sites/default/files/css/css_Vel5Jp-T1YEitfy1QbdiNGNnDYC_v1Hz71Keet86ADA.css" media="screen" rel="stylesheet" type="text/css"/>
+  <link href="https://www.colorado.edu/sites/default/files/css/css_e2y9Vg25bBFyNPStR8Kk0LVirgs9D3YQxCxzmfP2usU.css" media="screen" rel="stylesheet" type="text/css"/>
+  <style media="screen" type="text/css">
+   <!--/*--><![CDATA[/*><!--*/
+img.custom-logo{max-width:285px !important;width:100%;margin-right:20px;}
+
+/*]]>*/-->
+  </style>
+  <link href="https://www.colorado.edu/sites/default/files/css/css_P94aJfReWtRR2Ud3BDn58UZuP8S_qqKSA7MWPS75VXE.css" media="screen" rel="stylesheet" type="text/css"/>
+  <link href="" media="screen" rel="stylesheet" type="text/css"/>
+  <link href="https://www.colorado.edu/sites/default/files/css/css_Gk2ikHs1zz5olSjtRTUu98DSaXyEVoy2SY6A5naSc3A.css" media="screen" rel="stylesheet" type="text/css"/>
+  <link href="https://www.colorado.edu/sites/default/files/css/css_8CBFP_mVVnQeuY-3Nmw5Oj-P9AsaDTAlRWNC9QP09H4.css" media="screen" rel="stylesheet" type="text/css"/>
+  <link href="https://www.colorado.edu/sites/default/files/css/css_g5pjr7QD7xVSPL7-0tBSSBURfEVd5Qgw7jmJzZoBB1s.css" media="print" rel="stylesheet" type="text/css"/>
+  <script src="https://www.colorado.edu/sites/default/files/js/js_hCWal9LBwoN0dXtPK0Mn7A599Vgiv4-82lYJGH5WHJ0.js" type="text/javascript">
+  </script>
+  <script src="https://www.colorado.edu/profiles/express/libraries/modernizr/modernizr.min.js?q25gj0" type="text/javascript">
+  </script>
+  <script src="https://www.colorado.edu/sites/default/files/js/js_OZNF4qYMNJNBu3SmFk-qGRaJ6GUa_41jc9ZG1TfaJgI.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   <!--//--><![CDATA[//><!--
+jQuery.migrateMute=true;jQuery.migrateTrace=false;
+//--><!]]>
+  </script>
+  <script src="https://www.colorado.edu/sites/default/files/js/js_Av5LUyAl6UVXyYmOrQYQb9-8Ex1BrFHE39AiG_2tWi0.js" type="text/javascript">
+  </script>
+  <script src="https://www.colorado.edu/sites/default/files/js/js_DzD04PZATtGOFjfR8HJgfcaO3-pPZpWFXEvuMvQz2gA.js" type="text/javascript">
+  </script>
+  <script src="https://www.colorado.edu/sites/default/files/js/js_-NADCg3gEbnbDbWQfyTdqzIuc-5sbAruO7Fc8Bbc7-M.js" type="text/javascript">
+  </script>
+  <script src="https://www.colorado.edu/sites/default/files/js/js_-1TiDL6jL0QUt87iGVsw__P6OHncZvtrMbmi0Z0e0iw.js" type="text/javascript">
+  </script>
+  <script src="//www.youtube.com/iframe_api" type="text/javascript">
+  </script>
+  <script src="https://www.colorado.edu/sites/default/files/js/js_rsGiM5M1ffe6EhN-RnhM5f3pDyJ8ZAPFJNKpfjtepLk.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   <!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-25752450-1", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("set", "dimension1", "10914");ga("set", "dimension2", "Search");ga("set", "dimension3", "Basic page");ga("set", "dimension4", "Thu, 10\/05\/2017 - 14:10");ga("send", "pageview");ga('create', 'UA-90813831-1', 'auto', {'name':'customTracker0'});  ga('customTracker0.send', 'pageview');ga('create', 'UA-105731679-1', 'auto', {'name':'customTracker1'});  ga('customTracker1.send', 'pageview');
+//--><!]]>
+  </script>
+  <script src="https://www.colorado.edu/sites/default/files/js/js_VfpioWq0Wze1GN2lGed6Ds8plcAr3_RKtjAHkjrQeSw.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   <!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"homepage2019","theme_token":"V3LRTEEcx-oPffUYxcJyHIxr4yvZue_OT9E57fUS3aE","js":{"profiles\/express\/modules\/custom\/backstretch\/bs.js":1,"profiles\/express\/modules\/features\/cu_search\/js\/cu-search.js":1,"profiles\/express\/modules\/contrib\/google_cse\/google_cse_results.js":1,"profiles\/express\/themes\/ucb\/js\/track-focus.js":1,"0":1,"profiles\/express\/modules\/features\/cu_quicktab_styles\/js\/cu_quicktab_styles.js":1,"profiles\/express\/modules\/custom\/cu_back_to_top\/cu_back_to_top.js":1,"public:\/\/google_tag\/google_tag.script.js":1,"profiles\/express\/libraries\/modernizr\/modernizr.min.js":1,"profiles\/express\/modules\/contrib\/jquery_update\/replace\/jquery\/1.9\/jquery.min.js":1,"1":1,"profiles\/express\/modules\/contrib\/jquery_update\/replace\/jquery-migrate\/1\/jquery-migrate.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/express\/libraries\/fitvids\/jquery.fitvids.js":1,"profiles\/express\/libraries\/match-height\/jquery.matchHeight-min.js":1,"profiles\/express\/libraries\/waypoints\/waypoint.js":1,"profiles\/express\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"profiles\/express\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"profiles\/express\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.accordion.min.js":1,"profiles\/express\/modules\/features\/cu_colorbox\/js\/cu-colorbox.js":1,"profiles\/express\/modules\/custom\/cu_expandable\/js\/expandable.plugin.js":1,"profiles\/express\/modules\/custom\/cu_expandable\/js\/cu-expandable.js":1,"profiles\/express\/modules\/custom\/cu_share\/js\/cu_share.js":1,"profiles\/express\/modules\/custom\/cu_video_hero_unit_bundle\/js\/cu-video-hero.js":1,"profiles\/express\/modules\/custom\/express_collections_bundle\/js\/express-collections-bundle.js":1,"profiles\/express\/modules\/custom\/express_layout\/js\/express-layout.js":1,"profiles\/express\/modules\/contrib\/fitvids\/fitvids.js":1,"profiles\/express\/modules\/contrib\/google_cse\/google_cse.js":1,"profiles\/express\/modules\/custom\/site_navigation_menus\/js\/site-navigation-menus.js":1,"profiles\/express\/modules\/custom\/cu_section_page_bundle\/js\/cu-section-page.js":1,"profiles\/express\/libraries\/colorbox\/jquery.colorbox-min.js":1,"profiles\/express\/modules\/contrib\/colorbox\/js\/colorbox.js":1,"profiles\/express\/modules\/contrib\/colorbox\/styles\/stockholmsyndrome\/colorbox_style.js":1,"profiles\/express\/modules\/contrib\/context_accordion\/context_accordion.js":1,"profiles\/express\/libraries\/flickity\/js\/flickity.pkgd.min.js":1,"profiles\/express\/modules\/features\/cu_article\/modules\/cu_article_slider\/js\/cu-article-slider.js":1,"profiles\/express\/modules\/contrib\/files_undo_remove\/files_undo_remove.js":1,"profiles\/express\/libraries\/backstretch\/jquery.backstretch.js":1,"profiles\/express\/modules\/contrib\/rave_alerts\/js\/rave_alerts.js":1,"profiles\/express\/modules\/features\/cu_block_section\/js\/cu-block-section.js":1,"profiles\/express\/modules\/features\/cu_block_section\/js\/parallaxie.js":1,"profiles\/express\/modules\/custom\/cu_countdown_bundle\/cu_countdown\/js\/jquery.countdown.min.js":1,"profiles\/express\/modules\/custom\/cu_shortcodes\/js\/cu_shortcodes.js":1,"profiles\/express\/modules\/custom\/cu_shortcodes\/js\/counter.js":1,"\/\/www.youtube.com\/iframe_api":1,"profiles\/express\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"2":1,"profiles\/express\/themes\/ucb\/js\/ucb.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"profiles\/express\/modules\/features\/cu_article\/modules\/cu_article_slider\/css\/cu-article-slider.css":1,"sites\/all\/modules\/custom_homepage_bundle\/modules\/custom\/cu_atoz\/css\/cu_atoz.css":1,"profiles\/express\/modules\/custom\/cu_campus_news_bundle\/cu_campus_news\/css\/cu-campus-news.css":1,"profiles\/express\/modules\/custom\/cu_content_sequence_bundle\/cu_content_sequence\/css\/cu-content-sequence.css":1,"profiles\/express\/modules\/custom\/cu_dashboard_seo\/css\/cu-dashboard-seo.css":1,"profiles\/express\/modules\/custom\/cu_digital_campaign_bundle\/css\/icons.css":1,"profiles\/express\/modules\/custom\/cu_digital_campaign_bundle\/css\/search-form.css":1,"sites\/all\/modules\/custom_homepage_bundle\/modules\/custom\/cu_directory\/theme\/cu_directory.css":1,"profiles\/express\/modules\/custom\/cu_expandable\/css\/cu-expandable.css":1,"profiles\/express\/modules\/custom\/cu_inactive_users\/css\/cu-inactive-users.css":1,"profiles\/express\/modules\/custom\/cu_profile_module_manager\/css\/cu-profile-module-manager.css":1,"profiles\/express\/modules\/features\/cu_article\/cu_related_articles\/css\/cu-related-articles.css":1,"profiles\/express\/modules\/custom\/cu_share\/css\/cu-share.css":1,"profiles\/express\/modules\/features\/cu_wysiwyg\/cu-wysiwyg.css":1,"profiles\/express\/modules\/contrib\/date\/date_api\/date.css":1,"profiles\/express\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"profiles\/express\/modules\/custom\/express_add_content\/css\/express-add-content.css":1,"profiles\/express\/modules\/custom\/express_block_designer\/css\/express-block-designer.css":1,"profiles\/express\/modules\/custom\/express_block_designer\/modules\/express_block_designer_menu\/css\/exbd-menu.css":1,"profiles\/express\/modules\/custom\/express_collections_bundle\/css\/express-collections-bundle.css":1,"profiles\/express\/modules\/custom\/express_layout\/css\/express-layout-admin.css":1,"profiles\/express\/modules\/custom\/express_localist_bundle\/css\/express-localist-bundle.css":1,"profiles\/express\/modules\/custom\/express_localist_bundle\/css\/express-localist-bundle-theme.css":1,"profiles\/express\/modules\/custom\/express_responsive_visibility_bundle\/css\/express-responsive-visibility.css":1,"modules\/field\/theme\/field.css":1,"profiles\/express\/modules\/contrib\/fitvids\/fitvids.css":1,"profiles\/express\/modules\/contrib\/google_cse\/google_cse.css":1,"modules\/node\/node.css":1,"profiles\/express\/modules\/contrib\/rave_alerts\/css\/rave_alerts.css":1,"profiles\/express\/modules\/custom\/site_navigation_menus\/css\/site-navigation-menus.css":1,"modules\/user\/user.css":1,"profiles\/express\/modules\/contrib\/video_filter\/video_filter.css":1,"profiles\/express\/modules\/custom\/cu_section_page_bundle\/css\/cu-section-page.css":1,"profiles\/express\/modules\/contrib\/views\/css\/views.css":1,"profiles\/express\/modules\/custom\/cu_users\/css\/cu-users.css":1,"profiles\/express\/modules\/contrib\/colorbox\/styles\/stockholmsyndrome\/colorbox_style.css":1,"profiles\/express\/modules\/contrib\/context_accordion\/context_accordion.css":1,"profiles\/express\/modules\/contrib\/ctools\/css\/ctools.css":1,"profiles\/express\/libraries\/flickity\/css\/flickity.css":1,"profiles\/express\/libraries\/fontawesome\/css\/font-awesome.min.css":1,"profiles\/express\/modules\/contrib\/files_undo_remove\/files_undo_remove.css":1,"profiles\/express\/modules\/custom\/backstretch\/backstretch.css":1,"profiles\/express\/modules\/custom\/cu_block_row\/css\/cu-block-row.css":1,"profiles\/express\/modules\/features\/cu_block_section\/css\/cu-block-section.css":1,"profiles\/express\/modules\/custom\/cu_countdown_bundle\/cu_countdown\/css\/cu-countdown.css":1,"0":1,"sites\/all\/modules\/custom_homepage_bundle\/modules\/custom\/cu_degree_programs\/css\/cu-degree-programs.css":1,"profiles\/express\/modules\/features\/cu_facebook_activity\/cu_facebook_activity.css":1,"profiles\/express\/modules\/features\/cu_feature_callout\/css\/cu_feature_callout.css":1,"profiles\/express\/modules\/features\/cu_feature_callout\/css\/feature-callout-block-designer.css":1,"profiles\/express\/modules\/custom\/cu_give_buttons\/styles\/give-button.css":1,"profiles\/express\/modules\/features\/cu_hero_unit\/css\/cu_hero_unit.css":1,"profiles\/express\/modules\/custom\/cu_menu_icon\/cu_menu_icon.css":1,"profiles\/express\/modules\/features\/cu_quicktab_styles\/css\/cu_quicktab_styles.css":1,"profiles\/express\/modules\/features\/cu_search\/css\/cu-search.css":1,"profiles\/express\/modules\/custom\/cu_shortcodes\/css\/cu_shortcodes.css":1,"profiles\/express\/modules\/custom\/cu_shortcodes\/css\/cu-shortcodes-columns.css":1,"profiles\/express\/modules\/custom\/cu_site_info\/site_info.css":1,"profiles\/express\/modules\/features\/cu_social_links\/css\/social_links.css":1,"profiles\/express\/modules\/features\/cu_twitter_feed\/cu_twitter_feed.css":1,"profiles\/express\/modules\/custom\/cu_video_hero_unit_bundle\/css\/cu_video_hero_unit.css":1,"profiles\/express\/modules\/custom\/cu_video_reveal\/css\/cu-video-reveal.css":1,"profiles\/express\/modules\/custom\/express_layout\/css\/express-layout.css":1,"profiles\/express\/modules\/custom\/express_settings\/css\/express-settings.css":1,"profiles\/express\/modules\/features\/files\/css\/files.css":1,"profiles\/express\/modules\/features\/photo_gallery\/css\/photo-gallery.css":1,"profiles\/express\/modules\/custom\/profile_module_manager\/css\/profile-module-manager.css":1,"profiles\/express\/modules\/features\/cu_article\/css\/cu-article.css":1,"profiles\/express\/modules\/features\/cu_article\/css\/cu-article-grid.css":1,"profiles\/express\/modules\/features\/cu_article\/css\/owl.carousel.css":1,"profiles\/express\/modules\/features\/cu_faq\/css\/cu_faq.css":1,"profiles\/express\/modules\/features\/cu_page\/cu-page.css":1,"profiles\/express\/modules\/custom\/express_theme_picker\/express_theme_picker.css":1,"profiles\/express\/modules\/features\/people_content_type\/css\/people_content_type.css":1,"profiles\/express\/modules\/custom\/cu_back_to_top\/cu_back_to_top.css":1,"":1,"public:\/\/honeypot\/honeypot.css":1,"profiles\/express\/modules\/custom\/cu_core\/css\/cu-core.css":1,"profiles\/express\/themes\/ucb\/css\/ucb.css":1,"sites\/all\/themes\/homepage2019\/css\/homepage2019.css":1,"profiles\/express\/themes\/ucb\/css\/ucb-print.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"320px"},"localist_bypass_urls":["cupresents.org"],"googleCSE":{"cx":"016005321760733004813:ccotai7l2d0","resultsWidth":600,"domain":"www.google.com","showWaterMark":true},"fitvids":{"custom_domains":[],"selectors":["body"],"simplifymarkup":true,"ignore":""},"backstretchURL":"","backstretchMinWidth":0,"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip","trackColorbox":1},"currentPath":"node\/10914","currentPathIsAdmin":false,"urlIsAjaxTrusted":{"\/search?cse=campbell\u0026op=Search":true}});
+//--><!]]>
+  </script>
+  <!--[if lt IE 9]>
+    <script src="/profiles/express/themes/ucb/js/html5-respond.js"></script>
+    <![endif]-->
+ </head>
+ <body class="html not-front not-logged-in one-sidebar sidebar-second page-node page-node- page-node-10914 node-type-page layout-default headings-bold page-title-image-background-transparent block-icons-inherit layout-responsive max-width-1200 primary-sidebar-second express-site-type-default brand-fonts banner-black layout-wide">
+  <p id="skip-link">
+   <a class="element-invisible element-focusable" href="#main">
+    Skip to Content
+   </a>
+  </p>
+  <noscript aria-hidden="true">
+   <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-M3DX2QP" style="display:none;visibility:hidden" title="Google Tag Manager" width="0">
+    Google Tag Manager
+   </iframe>
+  </noscript>
+  <div class="page-wrapper">
+   <div class="page page node-published">
+    <!-- ALERTS -->
+    <div class="section" id="alerts-wide-wrapper">
+     <div class="clearfix" id="alerts">
+      <div class="region region-alerts">
+       <div class="block block-rave-alerts block-rave-alerts-rave-alerts" id="block-rave-alerts-rave-alerts">
+        <div class="block-inner-wrapper block-inner clearfix">
+         <div class="content">
+          <div data-remote-url="" id="rave-alerts">
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <!-- CAMPUS BRANDING -->
+    <div class="background-color-black no-underline">
+     <div class="container">
+      <div class="homepage-brand-bar-container">
+       <div class="homepage-logo">
+        <a href="http://www.colorado.edu">
+         <img alt="University of Colorado Boulder" src="https://www.colorado.edu/profiles/express/themes/ucb/images/cu-boulder-logo-text-white.svg"/>
+        </a>
+       </div>
+       <div class="homepage-beboulder">
+        <img alt="Be Boulder." src="https://www.colorado.edu/profiles/express/themes/ucb/images/beboulder/be-boulder-white.svg"/>
+       </div>
+       <div class="mobile-menu-toggle menu-toggle">
+        <button aria-controls="mobile-menu" aria-expanded="false" aria-haspopup="true" aria-label="Navigation" id="toggle">
+         <i aria-hidden="true" class="fa fa-reorder fa-fw">
+         </i>
+         <span class="element-invisible">
+          Menu
+         </span>
+        </button>
+       </div>
+       <a aria-controls="search" aria-expanded="false" aria-haspopup="true" aria-label="Search" class="search-toggle" href="https://www.colorado.edu/search" id="search-toggle">
+        <i class="fa fa-search fa-fw">
+        </i>
+        <span class="element-invisible">
+         Search
+        </span>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- /CAMPUS BRANDING -->
+    <!-- DESKTOP SEARCH -->
+    <div class="background-black" id="search" tabindex="-1">
+     <div id="search-inner">
+      <div class="container container-small">
+       <div class="search-form">
+        <div class="cu-search-box cu-search-box-small animated" role="search">
+         <h2>
+          Search
+         </h2>
+         <form action="https://www.colorado.edu/search" class="cu-search-form" method="get">
+          <div class="search-form-wrapper">
+           <div class="search-fields">
+            <div class="cu-search">
+             <div class="form-item form-type-textfield form-item-search-keys">
+              <label class="element-invisible" for="edit-search-keys">
+               Enter the terms you wish to search for.
+              </label>
+              <input class="form-text" id="edit-search-keys" maxlength="128" name="cse" placeholder="Search Colorado.edu" size="15" type="search" value=""/>
+             </div>
+             <div class="form-actions form-wrapper" id="edit-actions">
+              <input class="form-submit" id="edit-submit" name="op" type="submit" value="Search"/>
+             </div>
+            </div>
+           </div>
+           <div class="campus-links">
+            <h3 class="display-inline">
+             Other ways to search:
+            </h3>
+            <ul class="inline inline-menu">
+             <li>
+              <a href="https://calendar.colorado.edu">
+               Events Calendar
+              </a>
+             </li>
+             <li>
+              <a href="https://www.colorado.edu/map">
+               Campus Map
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </form>
+        </div>
+        <button id="close-search">
+         <i aria-hidden="true" class="fa fa-times">
+         </i>
+         <span class="element-invisible">
+          Close
+         </span>
+        </button>
+       </div>
+      </div>
+     </div>
+    </div>
+    <!-- /DESKTOP SEARCH -->
+    <!-- NAVIGATION -->
+    <div class="navigation-wrapper section no-underline" id="navigation-wrapper">
+     <!-- Secondary menu above main menu -->
+     <!-- Main menu -->
+     <div class="section" id="main-menu-wrapper">
+      <div class="container" id="navigation">
+       <div class="nav-inner clearfix">
+        <nav class="region region-menu action-none" role="navigation" tabindex="-1">
+         <div>
+          <h2 class="element-invisible">
+           Main menu
+          </h2>
+          <ul class="links inline clearfix" id="main-menu">
+           <li class="home-link first">
+            <a class="home-link first" href="/" id="home-link">
+             <i class="fa fa-home">
+             </i>
+             <span class="element-invisible">
+              Home
+             </span>
+            </a>
+           </li>
+           <li class="">
+            <a href="/about">
+             About
+            </a>
+           </li>
+           <li class="">
+            <a href="/academics">
+             Academics
+            </a>
+           </li>
+           <li class="">
+            <a href="/admissions">
+             Admissions
+            </a>
+           </li>
+           <li class="">
+            <a href="/research">
+             Research
+            </a>
+           </li>
+           <li class="last">
+            <a class="last" href="/visit">
+             Visit
+            </a>
+           </li>
+          </ul>
+         </div>
+         <div class="action-menu-wrapper">
+          <h2 class="element-invisible">
+           Secondary Menu
+          </h2>
+          <ul class="links inline clearfix action-menu" id="action-menu">
+           <li class="first">
+            <a class="first" href="/students">
+             Students
+            </a>
+           </li>
+           <li class="">
+            <a href="/faculty">
+             Faculty
+            </a>
+           </li>
+           <li class="">
+            <a href="/staff">
+             Staff
+            </a>
+           </li>
+           <li class="">
+            <a href="http://www.colorado.edu/parents" title="">
+             Families
+            </a>
+           </li>
+           <li class="last">
+            <a class="last" href="http://www.colorado.edu/alumni" title="">
+             Alumni
+            </a>
+           </li>
+          </ul>
+         </div>
+        </nav>
+       </div>
+      </div>
+     </div>
+     <!-- /Main menu -->
+    </div>
+    <!-- /NAVIGATION -->
+    <!-- MOBILE NAVIGATION -->
+    <div class="section no-underline" id="mobile-navigation-wrapper">
+     <div id="mobile-navigation">
+      <!-- Mobile search -->
+      <div class="background-black" id="mobile-search">
+       <div class="cu-search-box cu-search-box-small animated">
+        <h2 class="element-invisible">
+         Search
+        </h2>
+        <form action="/search" class="cu-search-form" method="get">
+         <div class="search-form-wrapper">
+          <div class="search-fields">
+           <div class="cu-search clearfix">
+            <div class="form-item form-type-textfield form-item-search-keys">
+             <label class="element-invisible" for="edit-search-keys-mobile">
+              Enter the terms you wish to search for.
+             </label>
+             <input class="form-text" id="edit-search-keys-mobile" maxlength="128" name="cse" placeholder="Search CU Boulder" size="15" type="search" value=""/>
+            </div>
+            <div class="form-actions form-wrapper" id="edit-actions-mobile">
+             <input class="form-submit" id="edit-submit-mobile" name="op" type="submit" value="Search"/>
+            </div>
+           </div>
+          </div>
+          <div class="campus-links text-minify">
+           <h3 class="display-inline h5">
+            Other ways to search:
+           </h3>
+           <ul class="inline inline-menu">
+            <li>
+             <a href="https://calendar.colorado.edu">
+              Events Calendar
+             </a>
+            </li>
+            <li>
+             <a href="https://www.colorado.edu/map">
+              Campus Map
+             </a>
+            </li>
+           </ul>
+          </div>
+         </div>
+        </form>
+       </div>
+      </div>
+      <!-- Mobile menu -->
+      <nav id="mobile-menu" role="navigation">
+       <h2 class="element-invisible">
+        Mobile menu
+       </h2>
+       <ul class="links clearfix" id="main-menu-mobile">
+        <li class="first">
+         <a class="first" href="/">
+          Home
+         </a>
+        </li>
+        <li class="">
+         <a href="/about">
+          About
+         </a>
+        </li>
+        <li class="">
+         <a href="/academics">
+          Academics
+         </a>
+        </li>
+        <li class="">
+         <a href="/admissions">
+          Admissions
+         </a>
+        </li>
+        <li class="">
+         <a href="/research">
+          Research
+         </a>
+        </li>
+        <li class="last">
+         <a class="last" href="/visit">
+          Visit
+         </a>
+        </li>
+       </ul>
+       <ul class="links clearfix" id="secondary-menu-mobile">
+        <li class="menu-2958 first">
+         <a href="/students">
+          Students
+         </a>
+        </li>
+        <li class="menu-15324">
+         <a href="/faculty">
+          Faculty
+         </a>
+        </li>
+        <li class="menu-15322">
+         <a href="/staff">
+          Staff
+         </a>
+        </li>
+        <li class="menu-2962">
+         <a href="http://www.colorado.edu/parents" title="">
+          Families
+         </a>
+        </li>
+        <li class="menu-2964 last">
+         <a href="http://www.colorado.edu/alumni" title="">
+          Alumni
+         </a>
+        </li>
+       </ul>
+      </nav>
+     </div>
+    </div>
+    <!-- MOBILE NAVIGATION -->
+    <!-- MESSAGES/TABS/HELP/ACTION LINKS -->
+    <div class="express-messages section">
+     <div class="container">
+     </div>
+    </div>
+    <!-- /MESSAGES/TABS/HELP/ACTION LINKS -->
+    <!-- PAGE CONTENT -->
+    <div class="page-content">
+     <!-- INTRO -->
+     <!-- //INTRO -->
+     <!-- SLIDER -->
+     <!-- //SLIDER -->
+     <!-- PAGE TITLE IMAGE -->
+     <!-- //PAGE TITLE IMAGE -->
+     <!-- MAIN CONTENT -->
+     <div class="section main-content-wrapper" id="main-content-wrapper">
+      <div class="clearfix" id="main">
+       <div class="container">
+        <!-- TITLE -->
+        <div class="">
+         <a id="main-content">
+         </a>
+         <h1 class="page-title title" id="page-title">
+          Search
+         </h1>
+        </div>
+       </div>
+       <!-- POST TITLE WIDE -->
+       <!-- POST TITLE -->
+       <!-- NODE CONTENT -->
+       <div class="content-wrapper section">
+        <div class="container">
+         <div class="row">
+          <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 order-sm-1 order-xs-1" id="content" role="main">
+           <div class="region region-content">
+            <div class="cu-search-box cu-search-box-big" role="search">
+             <h2 class="element-invisible">
+              Search
+             </h2>
+             <form action="https://www.colorado.edu/search" class="cu-search-form" method="get">
+              <div class="search-form-wrapper">
+               <div class="search-fields">
+                <div class="cu-search clearfix">
+                 <div class="form-item form-type-textfield form-item-search-keys">
+                  <label class="element-invisible" for="edit-search-keys">
+                   Enter the terms you wish to search for.
+                  </label>
+                  <input class="form-text" id="edit-search-keys" maxlength="128" name="cse" placeholder="Search Colorado.edu" size="15" type="search" value="campbell"/>
+                 </div>
+                 <div class="form-actions form-wrapper" id="edit-actions">
+                  <input class="form-submit" id="edit-submit" name="op" type="submit" value="Search"/>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </form>
+            </div>
+            <div class="block block-google-cse has-block-title block-google-cse-google-cse" id="block-google-cse-google-cse">
+             <div class="block-inner-wrapper block-inner clearfix">
+              <h2 class="block-title">
+               Search
+              </h2>
+              <div class="content">
+               <form accept-charset="UTF-8" action="/search?cse=campbell&amp;op=Search" id="google-cse-results-searchbox-form" method="get">
+                <div>
+                 <input name="cx" type="hidden" value="016005321760733004813:ccotai7l2d0">
+                  <input name="cof" type="hidden" value="FORID:11">
+                   <div class="form-item form-type-textfield form-item-query">
+                    <label for="edit-query">
+                     Enter your keywords
+                    </label>
+                    <input class="form-text" id="edit-query" maxlength="128" name="query" size="40" type="text" value="">
+                    </input>
+                   </div>
+                   <input class="form-submit" id="edit-sa" name="op" type="submit" value="Search">
+                    <input name="form_build_id" type="hidden" value="form-gN9Gx9TRZ6PXQqj4oYLUg2bdQ-gAnGCyzpMSk0XLaDA">
+                     <input name="form_id" type="hidden" value="google_cse_results_searchbox_form">
+                      <div class="url-textfield">
+                       <div class="form-item form-type-textfield form-item-url">
+                        <label for="edit-url">
+                         Leave this field blank
+                        </label>
+                        <input autocomplete="off" class="form-text" id="edit-url" maxlength="128" name="url" size="20" type="text" value=""/>
+                       </div>
+                      </div>
+                     </input>
+                    </input>
+                   </input>
+                  </input>
+                 </input>
+                </div>
+               </form>
+               <div id="google-cse-results">
+                <gcse:searchresults-only gname="google_cse" linktarget="_top">
+                </gcse:searchresults-only>
+                <noscript>
+                 You must enable JavaScript to view the search results.
+                </noscript>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <!-- SIDEBARS -->
+          <!-- SIDEBAR 2 -->
+          <div class="sidebar-second sidebar col-lg-4 col-md-4 col-sm-4 col-xs-12 order-sm-2 order-xs-2">
+           <div class="region region-sidebar-second">
+            <div class="block block-cu-directory has-block-title block-cu-directory-cu-directory-people-results" id="block-cu-directory-cu-directory-people-results">
+             <div class="block-inner-wrapper block-inner clearfix">
+              <h2 class="block-title">
+               CU People Search
+              </h2>
+              <div class="content">
+               <div class="cu-directory-sidebar-results">
+                <ul class="cu-directory-results">
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100852821">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100852821">
+                    Abigail Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Management
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Abigail.F.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Abigail.F.Campbell@Colorado.EDU">
+                     Abigail.F.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100730249">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100730249">
+                    Adam Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   A/V Administrator
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : Housing-Technology Services
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Adam.Campbell-1@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Adam.Campbell-1@Colorado.EDU">
+                     Adam.Campbell-1@Colorado.EDU
+                    </a>
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : 159 UCB
+                    <br/>
+                    Boulder, CO 80309-0159
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100908043">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100908043">
+                    Alden Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Alden.Campbell@colorado.edu">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Alden.Campbell@colorado.edu">
+                     Alden.Campbell@colorado.edu
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100757155">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100757155">
+                    Amy Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Integrative Physiology
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Amy.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Amy.Campbell@Colorado.EDU">
+                     Amy.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : 159 UCB
+                    <br/>
+                    Boulder, CO 80309-0159
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100741936">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100741936">
+                    Amy Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : AA-Campus Extended Studies
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Amy.S.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Amy.S.Campbell@Colorado.EDU">
+                     Amy.S.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100757742">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100757742">
+                    Andrew Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Management
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Andrew.V.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Andrew.V.Campbell@Colorado.EDU">
+                     Andrew.V.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100813246">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100813246">
+                    Andrew James Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Teaching Assistant
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Mathematics
+                   </div>
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : Mathematics
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Andrew.J.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Andrew.J.Campbell@Colorado.EDU">
+                     Andrew.J.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : 395 UCB
+                    <br/>
+                    Boulder, CO 80309-0395
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100902895">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100902895">
+                    Andrew James Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Andrew.Campbell-2@colorado.edu">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Andrew.Campbell-2@colorado.edu">
+                     Andrew.Campbell-2@colorado.edu
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100803463">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100803463">
+                    Andrew Stuart Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student Asst I
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : CU Bookstore
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Andrew.S.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Andrew.S.Campbell@Colorado.EDU">
+                     Andrew.S.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : 36 UCB
+                    <br/>
+                    Boulder, CO 80309-036
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100889544">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100889544">
+                    Ann Campbell Griffin
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Pre-Medical
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Ann.Griffin@colorado.edu">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Ann.Griffin@colorado.edu">
+                     Ann.Griffin@colorado.edu
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100930864">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100930864">
+                    Antoni Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Antoni.Campbell@colorado.edu">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Antoni.Campbell@colorado.edu">
+                     Antoni.Campbell@colorado.edu
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100703905">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100703905">
+                    Audrey Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Audrey.Campbell-1@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Audrey.Campbell-1@Colorado.EDU">
+                     Audrey.Campbell-1@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100845378">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100845378">
+                    Augustus Patrick Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Finance
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Augustus.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Augustus.Campbell@Colorado.EDU">
+                     Augustus.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100892898">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100892898">
+                    Avery Noel Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : A&amp;S - Open Option
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Avery.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Avery.Campbell@Colorado.EDU">
+                     Avery.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100824895">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100824895">
+                    Benjamin Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Finance
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Benjamin.N.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Benjamin.N.Campbell@Colorado.EDU">
+                     Benjamin.N.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100919380">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100919380">
+                    Blaine Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Political Science
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Blaine.Campbell@colorado.edu">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Blaine.Campbell@colorado.edu">
+                     Blaine.Campbell@colorado.edu
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100782095">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100782095">
+                    Braden Spencer Steward Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Aerospace Engineering Sciences
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Braden.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Braden.Campbell@Colorado.EDU">
+                     Braden.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100927048">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100927048">
+                    Brenda Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Mind Body Instructor
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : Rec Ctr-Special Ops
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Brenda.Campbell@colorado.edu">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Brenda.Campbell@colorado.edu">
+                     Brenda.Campbell@colorado.edu
+                    </a>
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : 355 UCB
+                    <br/>
+                    Boulder, CO 80309-0355
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100854818">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100854818">
+                    Brooke Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student Stipend
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Aerospace Engineering Sciences
+                   </div>
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : College Engineering &amp; App Sci
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Brooke.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Brooke.Campbell@Colorado.EDU">
+                     Brooke.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100858991">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100858991">
+                    Campbell Cecilia Davitt
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Art History
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Campbell.Davitt@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Campbell.Davitt@Colorado.EDU">
+                     Campbell.Davitt@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100885960">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100885960">
+                    Campbell David Watson
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Integrative Physiology
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Campbell.Watson@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Campbell.Watson@Colorado.EDU">
+                     Campbell.Watson@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100818226">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100818226">
+                    Campbell Fowler Lang
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student Stipend
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Physics
+                   </div>
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : School of Education
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Campbell.Lang@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Campbell.Lang@Colorado.EDU">
+                     Campbell.Lang@Colorado.EDU
+                    </a>
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : 249 UCB
+                    <br/>
+                    Boulder, CO 80309-0249
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100885711">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100885711">
+                    Campbell Ivor Lancaster
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Business - Open Option
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Campbell.Lancaster@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Campbell.Lancaster@Colorado.EDU">
+                     Campbell.Lancaster@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100693560">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100693560">
+                    Campbell White
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Marketing Attendant
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : Rec Ctr-Special Ops
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Campbell.White@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Campbell.White@Colorado.EDU">
+                     Campbell.White@Colorado.EDU
+                    </a>
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : 355 UCB
+                    <br/>
+                    Boulder, CO 80309-0355
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100924135">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100924135">
+                    Claudia Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Claudia.Campbell-1@colorado.edu">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Claudia.Campbell-1@colorado.edu">
+                     Claudia.Campbell-1@colorado.edu
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100889076">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100889076">
+                    Claudia Noelle Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Claudia.Campbell@colorado.edu">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Claudia.Campbell@colorado.edu">
+                     Claudia.Campbell@colorado.edu
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100728190">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100728190">
+                    Colleen Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Teaching Assistant
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : Communication
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Colleen.Campbell-1@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Colleen.Campbell-1@Colorado.EDU">
+                     Colleen.Campbell-1@Colorado.EDU
+                    </a>
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : 270 UCB
+                    <br/>
+                    Boulder, CO 80309-0270
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100755138">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100755138">
+                    D. Ashley Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Research Assistant
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : Media Studies
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Deborha.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Deborha.Campbell@Colorado.EDU">
+                     Deborha.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100926775">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100926775">
+                    Daniel Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Head Line Cook
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : Housing-Administration
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Daniel.Campbell-1@colorado.edu">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Daniel.Campbell-1@colorado.edu">
+                     Daniel.Campbell-1@colorado.edu
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100620717">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100620717">
+                    Elise Dimitrov Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Travel &amp; Guest Artist Coord
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : College of Music
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Elise.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Elise.Campbell@Colorado.EDU">
+                     Elise.Campbell@Colorado.EDU
+                    </a>
+                    • 303-492-9800
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100799061">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100799061">
+                    Ethan Craig Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Integrative Physiology
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Ethan.C.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Ethan.C.Campbell@Colorado.EDU">
+                     Ethan.C.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100499767">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100499767">
+                    George Garrett Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Retiree
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : Coop Inst Res/Envrm Sci - Dir
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:George.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:George.Campbell@Colorado.EDU">
+                     George.Campbell@Colorado.EDU
+                    </a>
+                    • 303-492-5194
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : 216 UCB
+                    <br/>
+                    Boulder, CO 80309-0216
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100895241">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100895241">
+                    Graham Thomas Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Biological Sciences-MCD
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Graham.Campbell@colorado.edu">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Graham.Campbell@colorado.edu">
+                     Graham.Campbell@colorado.edu
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100857219">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100857219">
+                    Haley Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Ecology &amp; Evolutionary Biology
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Haley.H.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Haley.H.Campbell@Colorado.EDU">
+                     Haley.H.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100885004">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100885004">
+                    Haley Michele Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Ecology &amp; Evolutionary Biology
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Haley.M.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Haley.M.Campbell@Colorado.EDU">
+                     Haley.M.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100858315">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100858315">
+                    Halle Darling Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Mechanical Engineering
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Halle.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Halle.Campbell@Colorado.EDU">
+                     Halle.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100885003">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100885003">
+                    Hannah Marie Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Architectural Engineering
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Hannah.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Hannah.Campbell@Colorado.EDU">
+                     Hannah.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100583105">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100583105">
+                    Hillary Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   NCWIT Senior Technologist
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : NCWIT
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Hillary.L.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Hillary.L.Campbell@Colorado.EDU">
+                     Hillary.L.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100872997">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100872997">
+                    Jack Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Jack.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Jack.Campbell@Colorado.EDU">
+                     Jack.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100800735">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100800735">
+                    James Mcclellan Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Management
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:James.M.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:James.M.Campbell@Colorado.EDU">
+                     James.M.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100905482">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100905482">
+                    Janice Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Janice.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Janice.Campbell@Colorado.EDU">
+                     Janice.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100001179">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100001179">
+                    Jillian Lettes Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:jillian.campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:jillian.campbell@Colorado.EDU">
+                     jillian.campbell@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100574251">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100574251">
+                    Joanne Gray
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Political Science
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Joanne.Gray@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Joanne.Gray@Colorado.EDU">
+                     Joanne.Gray@Colorado.EDU
+                    </a>
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : 178 UCB
+                    <br/>
+                    Boulder, CO 80309-0178
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100810870">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100810870">
+                    John Bradley
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:John.Bradley-1@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:John.Bradley-1@Colorado.EDU">
+                     John.Bradley-1@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100051691">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100051691">
+                    Karen E Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Admin Assistant III
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : Housing-Administration
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Karen.E.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Karen.E.Campbell@Colorado.EDU">
+                     Karen.E.Campbell@Colorado.EDU
+                    </a>
+                    • 303-735-0878
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : 159 UCB
+                    <br/>
+                    Boulder, CO 80309-0159
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100055961">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100055961">
+                    Karen L Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Volunteer Pgm Mgr &amp; Collection
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : Library Administration
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:karen.campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:karen.campbell@Colorado.EDU">
+                     karen.campbell@Colorado.EDU
+                    </a>
+                    • 303-492-5083
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : 184 UCB
+                    <br/>
+                    Boulder, CO 80309-0184
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100892899">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100892899">
+                    Katherina Anna Campbell Mook
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   SAI Police Dept, Admin Support
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : A&amp;S - Open Option
+                   </div>
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : CU Police Department
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Katherina.CampbellMook@colorado.edu">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Katherina.CampbellMook@colorado.edu">
+                     Katherina.CampbellMook@colorado.edu
+                    </a>
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : 502 UCB
+                    <br/>
+                    Boulder, CO 80309-0502
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100051190">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100051190">
+                    Kathleen Georgia Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Retiree
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : Retirees UCB
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:kathleen.campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:kathleen.campbell@Colorado.EDU">
+                     kathleen.campbell@Colorado.EDU
+                    </a>
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : 575 SYS
+                    <br/>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100922949">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100922949">
+                    Katie Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Comm &amp; Marketing Coordinator
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : Student Affairs Communications
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:katie.campbell@colorado.edu">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:katie.campbell@colorado.edu">
+                     katie.campbell@colorado.edu
+                    </a>
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : 159 UCB
+                    <br/>
+                    Boulder, CO 80309-0159
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100893738">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100893738">
+                    Kristin Mitchell Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Kristin.Campbell@colorado.edu">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Kristin.Campbell@colorado.edu">
+                     Kristin.Campbell@colorado.edu
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100880678">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100880678">
+                    Lauren Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Lauren.Campbell-1@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Lauren.Campbell-1@Colorado.EDU">
+                     Lauren.Campbell-1@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100076613">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100076613">
+                    Leigh Campbell-Hale
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Lecturer
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : CLAS-History
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:leigh.campbell-hale@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:leigh.campbell-hale@Colorado.EDU">
+                     leigh.campbell-hale@Colorado.EDU
+                    </a>
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : B182 UCD
+                    <br/>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100740556">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100740556">
+                    Lillian Bale Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : English
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Lillian.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Lillian.Campbell@Colorado.EDU">
+                     Lillian.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100933842">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100933842">
+                    Lydon Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : A&amp;S - Open Option
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:John.Campbell-1@colorado.edu">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:John.Campbell-1@colorado.edu">
+                     John.Campbell-1@colorado.edu
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100881390">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100881390">
+                    Lynly Louise Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Lynly.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Lynly.Campbell@Colorado.EDU">
+                     Lynly.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100784706">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100784706">
+                    Maddie Anne Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Environmental Studies
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Maddie.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Maddie.Campbell@Colorado.EDU">
+                     Maddie.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100065593">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100065593">
+                    Margaret Catherine Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Professor
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : Leeds School of Business
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:meg.campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:meg.campbell@Colorado.EDU">
+                     meg.campbell@Colorado.EDU
+                    </a>
+                    • 303-735-6305
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : 419 UCB
+                    <br/>
+                    Boulder, CO 80309-0419
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100059118">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100059118">
+                    Marie L Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Retiree
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : Retirees UCB
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Marie.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Marie.Campbell@Colorado.EDU">
+                     Marie.Campbell@Colorado.EDU
+                    </a>
+                    • 303-492-8053
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : 575 UCB
+                    <br/>
+                    Boulder, CO 80309-0575
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100059117">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100059117">
+                    Martha S Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Retiree
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : Retirees UCB
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Martha.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Martha.Campbell@Colorado.EDU">
+                     Martha.Campbell@Colorado.EDU
+                    </a>
+                    • 303-492-8053
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : 575 UCB
+                    <br/>
+                    Boulder, CO 80309-0575
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100057828">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100057828">
+                    Mary Jane Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Retiree
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : Retirees UCB
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:maryjane.campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:maryjane.campbell@Colorado.EDU">
+                     maryjane.campbell@Colorado.EDU
+                    </a>
+                    • 303-492-8816
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : 400 UCA
+                    <br/>
+                    Denver, CO 80217-3364
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100811629">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100811629">
+                    Michael Joseph Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Marketing
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Michael.J.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Michael.J.Campbell@Colorado.EDU">
+                     Michael.J.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100040705">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100040705">
+                    Michael T Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Retiree
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : Retirees UCB
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:michael.campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:michael.campbell@Colorado.EDU">
+                     michael.campbell@Colorado.EDU
+                    </a>
+                    • 303-492-2534
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : 575 SYS
+                    <br/>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100889322">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100889322">
+                    Molly Catherine Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Linguistics
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Molly.Campbell@colorado.edu">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Molly.Campbell@colorado.edu">
+                     Molly.Campbell@colorado.edu
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100761848">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100761848">
+                    Monica Gilmore
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Grad Part-Time Instructor
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Educ-Curriculum &amp; Instruction
+                   </div>
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : School of Education
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:monica.gilmore@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:monica.gilmore@Colorado.EDU">
+                     monica.gilmore@Colorado.EDU
+                    </a>
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : 249 UCB
+                    <br/>
+                    Boulder, CO 80309-0249
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100086540">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100086540">
+                    Nathan Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Professional Research Asst
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : Coop Inst Res/Envrm Sci - Dir
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:nathan.campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:nathan.campbell@Colorado.EDU">
+                     nathan.campbell@Colorado.EDU
+                    </a>
+                    • 303-492-5529
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : 216 UCB
+                    <br/>
+                    Boulder, CO 80309-0216
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100621252">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100621252">
+                    Nicholas James Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Research Assistant
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : CEDC-Civil Engineering
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Nicholas.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Nicholas.Campbell@Colorado.EDU">
+                     Nicholas.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : B113 UCD
+                    <br/>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100679909">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100679909">
+                    Nicholas Scott Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   PostDoctoral Associate
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : IRISS Grand Challenge
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:nica3422@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:nica3422@Colorado.EDU">
+                     nica3422@Colorado.EDU
+                    </a>
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : 429 UCB
+                    <br/>
+                    Boulder, CO 80309-0429
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100430447">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100430447">
+                    Nnenia Marie Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Research Associate
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : Behavioral Sci Inst-Admin
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:nnenia.campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:nnenia.campbell@Colorado.EDU">
+                     nnenia.campbell@Colorado.EDU
+                    </a>
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : 483 UCB
+                    <br/>
+                    Boulder, CO 80309-0483
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100755844">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100755844">
+                    Nyika Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student Asst I
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Studio Arts
+                   </div>
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : Dept of Art and Art History
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Nyika.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Nyika.Campbell@Colorado.EDU">
+                     Nyika.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100903333">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100903333">
+                    Owen Campbell Ard
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Owen.Ard@colorado.edu">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Owen.Ard@colorado.edu">
+                     Owen.Ard@colorado.edu
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100835011">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100835011">
+                    Paige Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student Asst I
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Biological Sciences-MCD
+                   </div>
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : Geological Sciences
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Paige.K.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Paige.K.Campbell@Colorado.EDU">
+                     Paige.K.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100049455">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100049455">
+                    Patricia Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Retiree
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : Retirees UCB
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Patricia.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Patricia.Campbell@Colorado.EDU">
+                     Patricia.Campbell@Colorado.EDU
+                    </a>
+                    • 303-492-8053
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : 575 UCB
+                    <br/>
+                    Boulder, CO 80309-0575
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100162940">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100162940">
+                    Patrick Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Senior Staff Photographer
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : Office of Strategic Relations
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:patrick.campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:patrick.campbell@Colorado.EDU">
+                     patrick.campbell@Colorado.EDU
+                    </a>
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : 584 UCB
+                    <br/>
+                    Boulder, CO 80309-0584
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100909024">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100909024">
+                    Patrick Campbell Ii
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Patrick.CampbellIi@colorado.edu">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Patrick.CampbellIi@colorado.edu">
+                     Patrick.CampbellIi@colorado.edu
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100712449">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100712449">
+                    Patrick Egid Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Accounting
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Patrick.E.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Patrick.E.Campbell@Colorado.EDU">
+                     Patrick.E.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : 428 UCB
+                    <br/>
+                    Boulder, CO 80309-0428
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100737479">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100737479">
+                    Pearce Edward Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Psychology
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Pearce.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Pearce.Campbell@Colorado.EDU">
+                     Pearce.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100833446">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100833446">
+                    Peyton Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Civil Engineering
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Peyton.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Peyton.Campbell@Colorado.EDU">
+                     Peyton.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100848581">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100848581">
+                    Porshai Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Admin Assistant II
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : SDM-Dental Clinic Compreh Care
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : F841 AMCA
+                    <br/>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100890900">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100890900">
+                    River Life Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Political Science
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:River.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:River.Campbell@Colorado.EDU">
+                     River.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100788352">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100788352">
+                    Ryan Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Computer Science
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Ryan.Campbell-2@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Ryan.Campbell-2@Colorado.EDU">
+                     Ryan.Campbell-2@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100910729">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100910729">
+                    Samantha Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : Sociology
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Samantha.Campbell@colorado.edu">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Samantha.Campbell@colorado.edu">
+                     Samantha.Campbell@colorado.edu
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100390684">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100390684">
+                    Sarah Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Sarah.C.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Sarah.C.Campbell@Colorado.EDU">
+                     Sarah.C.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100059425">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100059425">
+                    Sharon Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Retiree
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : Retirees UCB
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:sharon.campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:sharon.campbell@Colorado.EDU">
+                     sharon.campbell@Colorado.EDU
+                    </a>
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : 575 SYS
+                    <br/>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100894103">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100894103">
+                    Sophie Elizabeth Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : English
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Sophie.Campbell@colorado.edu">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Sophie.Campbell@colorado.edu">
+                     Sophie.Campbell@colorado.edu
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100799745">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100799745">
+                    Stephen Campbell Crockett
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-major">
+                    <strong>
+                     Major
+                    </strong>
+                    : International Affairs
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Stephen.Crockett@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Stephen.Crockett@Colorado.EDU">
+                     Stephen.Crockett@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100048182">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100048182">
+                    Suzanne L Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Retiree
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : Retirees UCB
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Suzanne.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Suzanne.Campbell@Colorado.EDU">
+                     Suzanne.Campbell@Colorado.EDU
+                    </a>
+                    • 303-492-7260
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : 575 SYS
+                    <br/>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100668623">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100668623">
+                    Tajshen Geneva Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Grad Part-Time Instructor
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : Communication
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Tajshen.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Tajshen.Campbell@Colorado.EDU">
+                     Tajshen.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : 478 UCB
+                    <br/>
+                    Boulder, CO 80309-0478
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100854094">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100854094">
+                    Tarik Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Tarik.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Tarik.Campbell@Colorado.EDU">
+                     Tarik.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100713805">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100713805">
+                    Tatiana Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Student
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:Tatiana.Campbell@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:Tatiana.Campbell@Colorado.EDU">
+                     Tatiana.Campbell@Colorado.EDU
+                    </a>
+                   </div>
+                  </div>
+                 </li>
+                 <li class="cu-directory-sidebar-result people-result" id="people_search_result_100058000">
+                  <strong>
+                   <a class="people-more" href="#people_search_result_100058000">
+                    William C Campbell
+                   </a>
+                  </strong>
+                  <div class="people-title">
+                   Retiree
+                  </div>
+                  <div class="people-meta">
+                   <div class="people-department">
+                    <strong>
+                     Department
+                    </strong>
+                    : Retirees UCB
+                   </div>
+                   <div class="people-data">
+                    <strong>
+                     Contact
+                    </strong>
+                    :
+                    <a class="email-short" href="mailto:william.campbell-1@Colorado.EDU">
+                     Email
+                    </a>
+                    <a class="email-long" href="mailto:william.campbell-1@Colorado.EDU">
+                     william.campbell-1@Colorado.EDU
+                    </a>
+                    • 303-492-6028
+                   </div>
+                   <div class="people-address">
+                    <strong>
+                     Mailing Box
+                    </strong>
+                    : 575 SYS
+                    <br/>
+                   </div>
+                  </div>
+                 </li>
+                </ul>
+               </div>
+               <script type="text/javascript">
+                jQuery(".sidebar .people-meta").hide();
+jQuery(".sidebar ul.cu-directory-results li:gt(9)").hide();
+jQuery(".sidebar a.people-more").click(function(e) {
+  e.preventDefault();
+  var showthis = jQuery(this).attr("href");
+  var el = jQuery(".sidebar " + showthis + " .people-meta");
+  el.is(':visible') ? el.fadeOut() : el.fadeIn();
+  return false;
+});
+               </script>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <!-- SIDEBAR 1 -->
+          <div class="sidebar-first sidebar">
+          </div>
+          <!-- /SIDEBARS -->
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- /MAIN CONTENT -->
+     <!-- FEATURE LAYOUT CONTENT -->
+     <!-- /FEATURE LAYOUT CONTENT -->
+    </div>
+    <!-- /PAGE CONTENT -->
+    <!-- POST WIDE -->
+    <!-- /POST WIDE -->
+    <!-- AFTER CONTENT -->
+    <!-- /AFTER CONTENT -->
+    <!-- AFTER CONTENT2 -->
+    <!-- /AFTER CONTENT2 -->
+    <!-- FOOTER SECTION -->
+    <div class="footer-section" id="footer-section">
+     <!-- FOOTER -->
+     <div class="section footer-wrapper" id="footer-wrapper">
+      <div class="footer container" id="footer">
+       <div>
+        <div class="region region-footer-top">
+         <div class="block block-bean content-grid-style--columns exbd-icon-style-default exbd-heading-align-default background-default exbd-font-scale-title-default exbd-font-scale-content-default exbd-menu-style-default exbd-block block-bean-type-feature-callout block-bean-content-grid-footer-buttons" id="block-bean-content-grid-footer-buttons">
+          <div class="block-inner-wrapper block-inner clearfix">
+           <div class="content">
+            <div class="content-grid-container clearfix row content-grid-style-columns">
+             <div class="content-grid-item col-lg-4 col-md-4 col-sm-4 col-xs-12 content-grid-columns-3">
+              <div class="content-grid-item-inner">
+               <div class="content-grid-image" role="presentation">
+               </div>
+               <div class="content-grid-content">
+                <p>
+                 <a class="button button-large button-full button-blue" href="https://www.colorado.edu/admissions">
+                  Apply for Admission
+                 </a>
+                </p>
+               </div>
+              </div>
+             </div>
+             <div class="content-grid-item col-lg-4 col-md-4 col-sm-4 col-xs-12 content-grid-columns-3">
+              <div class="content-grid-item-inner">
+               <div class="content-grid-image" role="presentation">
+               </div>
+               <div class="content-grid-content">
+                <p>
+                 <a class="button button-large button-full button-blue" href="https://www.colorado.edu/visit">
+                  Visit Campus
+                 </a>
+                </p>
+               </div>
+              </div>
+             </div>
+             <div class="content-grid-item col-lg-4 col-md-4 col-sm-4 col-xs-12 content-grid-columns-3">
+              <div class="content-grid-item-inner">
+               <div class="content-grid-image" role="presentation">
+               </div>
+               <div class="content-grid-content">
+                <p>
+                 <a class="button button-large button-full button-blue" href="https://www.colorado.edu/advancement">
+                  Support CU Boulder
+                 </a>
+                </p>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="region region-footer region-four-columns block-column-container row">
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+         <div class="block block-menu has-block-title block-menu-menu-get-help" id="block-menu-menu-get-help">
+          <div class="block-inner-wrapper block-inner clearfix">
+           <h2 class="block-title">
+            Get Help
+           </h2>
+           <div class="content">
+            <ul class="menu">
+             <li class="first leaf">
+              <a class="menu__link" href="/students" title="">
+               Campus &amp; Student Services
+              </a>
+             </li>
+             <li class="leaf">
+              <a class="menu__link" href="/get-help/safety-health-quick-calls" title="">
+               Safety &amp; Health Services
+              </a>
+             </li>
+             <li class="leaf">
+              <a class="menu__link" href="http://www.colorado.edu/today" title="">
+               Campus Communications
+              </a>
+             </li>
+             <li class="leaf">
+              <a class="menu__link" href="http://alerts.colorado.edu/" title="">
+               Emergency Alert System
+              </a>
+             </li>
+             <li class="leaf">
+              <a class="menu__link" href="http://www.colorado.edu/orientation" title="">
+               New Student &amp; Family Programs
+              </a>
+             </li>
+             <li class="last leaf">
+              <a class="menu__link" href="/campus-accessibility">
+               Accessibility
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+         <div class="block block-menu has-block-title block-menu-menu-getting-around" id="block-menu-menu-getting-around">
+          <div class="block-inner-wrapper block-inner clearfix">
+           <h2 class="block-title">
+            Getting Around
+           </h2>
+           <div class="content">
+            <ul class="menu">
+             <li class="first leaf">
+              <a class="menu__link" href="http://www.colorado.edu/atoz/letter/a" title="">
+               A to Z Directory
+              </a>
+             </li>
+             <li class="leaf">
+              <a class="menu__link" href="http://www.colorado.edu/map/" title="">
+               Campus Map
+              </a>
+             </li>
+             <li class="leaf">
+              <a class="menu__link" href="http://www.colorado.edu/events" title="">
+               Campus Events
+              </a>
+             </li>
+             <li class="leaf">
+              <a class="menu__link" href="http://www.colorado.edu/pts/" title="">
+               Parking &amp; Transportation
+              </a>
+             </li>
+             <li class="last leaf">
+              <a class="menu__link" href="http://www.colorado.edu/visit" title="">
+               Visit Information
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+         <div class="block block-menu has-block-title block-menu-menu-information-for" id="block-menu-menu-information-for">
+          <div class="block-inner-wrapper block-inner clearfix">
+           <h2 class="block-title">
+            Information for
+           </h2>
+           <div class="content">
+            <ul class="menu">
+             <li class="first leaf">
+              <a class="menu__link" href="/students" title="">
+               Current Students
+              </a>
+             </li>
+             <li class="leaf">
+              <a class="menu__link" href="/facultystaff" title="">
+               Faculty &amp; Staff
+              </a>
+             </li>
+             <li class="leaf">
+              <a class="menu__link" href="http://www.colorado.edu/parents" title="">
+               Families
+              </a>
+             </li>
+             <li class="last leaf">
+              <a class="menu__link" href="https://www.colorado.edu/today/media" title="">
+               Journalists
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+         <div class="block block-menu exbd-icon-style-default exbd-heading-align-default background-default exbd-font-scale-title-default exbd-font-scale-content-default exbd-menu-style-default exbd-block has-block-title block-menu-menu-initiatives" id="block-menu-menu-initiatives">
+          <div class="block-inner-wrapper block-inner clearfix">
+           <div class="exbd-block-title">
+            <h2 class="block-title">
+             Initiatives
+            </h2>
+           </div>
+           <div class="content">
+            <ul class="menu">
+             <li class="first leaf">
+              <a class="menu__link__icon menu__link" href="http://www.colorado.edu/industry/" title="">
+               <i class="fa fa-fw fa-briefcase">
+               </i>
+               <span class="menu-icon-text">
+                Business &amp; Industry Collaborations
+               </span>
+              </a>
+             </li>
+             <li class="leaf">
+              <a class="menu__link__icon menu__link" href="http://www.colorado.edu/odece/" title="">
+               <i class="fa fa-fw fa-users">
+               </i>
+               <span class="menu-icon-text">
+                Diversity &amp; Community Engagement
+               </span>
+              </a>
+             </li>
+             <li class="leaf">
+              <a class="menu__link__icon menu__link" href="https://www.colorado.edu/free-expression" title="">
+               <i class="fa fa-fw fa-flag">
+               </i>
+               <span class="menu-icon-text">
+                Free Speech
+               </span>
+              </a>
+             </li>
+             <li class="leaf">
+              <a class="menu__link__icon menu__link" href="http://www.colorado.edu/entrepreneurship" title="">
+               <i class="fa fa-fw fa-lightbulb-o">
+               </i>
+               <span class="menu-icon-text">
+                Innovation &amp; Entrepreneurship
+               </span>
+              </a>
+             </li>
+             <li class="leaf">
+              <a class="menu__link__icon menu__link" href="http://www.colorado.edu/international" title="">
+               <i class="fa fa-fw fa-globe">
+               </i>
+               <span class="menu-icon-text">
+                International Students
+               </span>
+              </a>
+             </li>
+             <li class="leaf">
+              <a class="menu__link__icon menu__link" href="http://outreach.colorado.edu/" title="">
+               <i class="fa fa-fw fa-road">
+               </i>
+               <span class="menu-icon-text">
+                Public &amp; Outreach Programs
+               </span>
+              </a>
+             </li>
+             <li class="last leaf">
+              <a class="menu__link__icon menu__link" href="http://www.colorado.edu/sustainability" title="">
+               <i class="fa fa-fw fa-leaf">
+               </i>
+               <span class="menu-icon-text">
+                Sustainability Initiatives
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- /FOOTER -->
+     <!-- FOOTER MENU -->
+     <!-- /FOOTER MENU -->
+     <!-- SITE INFO -->
+     <div class="section site-info-wrapper" id="site-info-wrapper">
+      <div class="site-info" id="site-info">
+       <div class="container">
+        <footer class="region region-site-info footer-2col" id="site-footer">
+         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="site-footer-content">
+          <div class="block block-bean exbd-icon-style-default exbd-heading-align-default background-default exbd-font-scale-title-default exbd-font-scale-content-default exbd-menu-style-default exbd-block block-bean-type-block block-bean-social-links-html" id="block-bean-social-links-html">
+           <div class="block-inner-wrapper block-inner clearfix">
+            <div class="content">
+             <div class="entity entity-bean bean-block clearfix">
+              <div class="content">
+               <div class="field field-name-field-block-text field-type-text-long field-label-hidden">
+                <div class="item-list" style="text-align:center;">
+                 <ul class="social-links social-links-horizontal-icons-only social-links-32 soc">
+                  <li class="first">
+                   <a href="http://www.facebook.com/cuboulder" itemprop="sameAs" title="Facebook">
+                    <span class="socicon socicon-facebook soc-facebook">
+                    </span>
+                    <span class="social-links-text social-links-text-facebook element-invisible">
+                     Facebook
+                    </span>
+                   </a>
+                  </li>
+                  <li>
+                   <a href="http://www.twitter.com/cuboulder" itemprop="sameAs" title="Twitter">
+                    <span class="socicon socicon-twitter soc-twitter">
+                    </span>
+                    <span class="social-links-text social-links-text-twitter element-invisible">
+                     Twitter
+                    </span>
+                   </a>
+                  </li>
+                  <li>
+                   <a href="https://www.youtube.com/cuboulder" itemprop="sameAs" title="YouTube">
+                    <span class="socicon socicon-youtube soc-youtube">
+                    </span>
+                    <span class="social-links-text social-links-text-youtube element-invisible">
+                     YouTube
+                    </span>
+                   </a>
+                  </li>
+                  <li>
+                   <a href="https://www.linkedin.com/school/cuboulder/" itemprop="sameAs" title="LinkedIn">
+                    <span class="socicon socicon-linkedin soc-linkedin">
+                    </span>
+                    <span class="social-links-text social-links-text-linkedin element-invisible">
+                     LinkedIn
+                    </span>
+                   </a>
+                  </li>
+                  <li>
+                   <a href="http://instagram.com/cuboulder" itemprop="sameAs" title="Instagram">
+                    <span class="socicon socicon-instagram soc-instagram">
+                    </span>
+                    <span class="social-links-text social-links-text-instagram element-invisible">
+                     Instagram
+                    </span>
+                   </a>
+                  </li>
+                  <li class="last">
+                   <a href="http://pinterest.com/cuboulder/" itemprop="sameAs" title="Pinterest">
+                    <span class="socicon socicon-pinterest soc-pinterest">
+                    </span>
+                    <span class="social-links-text social-links-text-pinterest element-invisible">
+                     Pinterest
+                    </span>
+                   </a>
+                  </li>
+                 </ul>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="block block-cu-site-info has-block-title block-cu-site-info-site-info" id="block-cu-site-info-site-info">
+           <div class="block-inner-wrapper block-inner clearfix">
+            <h2 class="block-title">
+             <a href="/">
+              University of Colorado Boulder
+             </a>
+            </h2>
+            <div class="content">
+             <p>
+              © Regents of the University of Colorado
+              <br/>
+              <a href="https://www.colorado.edu/contact-us">
+               Contact Us
+              </a>
+              •
+              <a href="https://www.colorado.edu/policies/privacy-statement">
+               Privacy
+              </a>
+              •
+              <a href="https://www.colorado.edu/about/legal-trademarks">
+               Legal &amp; Trademarks
+              </a>
+              <br/>
+              <a href="https://www.colorado.edu/campus-accessibility">
+               Accessibility
+              </a>
+              •
+              <a href="https://www.colorado.edu/about/your-right-know">
+               Student Consumer Information
+              </a>
+              •
+              <a href="https://www.colorado.edu/policies">
+               Policies
+              </a>
+              •
+              <a href="https://www.colorado.edu/jobs">
+               CU Boulder Jobs
+              </a>
+             </p>
+             <p>
+              Download the
+              <strong>
+               <a href="https://www.colorado.edu/node/5273/attachment">
+                Clery Act Annual Security &amp; Fire safety report
+               </a>
+              </strong>
+              , or
+              <strong>
+               <a href="https://www.colorado.edu/police/clery">
+                request a paper copy
+               </a>
+              </strong>
+              from the CU Boulder
+              <strong>
+               <a href="https://www.colorado.edu/police/">
+                Police Department
+               </a>
+              </strong>
+              .
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </footer>
+       </div>
+      </div>
+     </div>
+     <!-- /SITE INFO -->
+    </div>
+   </div>
+  </div>
+  <div id="cu_back_to_top">
+   <a href="#page" title="Back to Top">
+    Return to the top of the page
+   </a>
+  </div>
+  <script src="https://www.colorado.edu/sites/default/files/js/js_-eBiHHyr5sgwN_rKU82xkq4i1yYRebKLflYEHMJs2V8.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   <!--//--><![CDATA[//><!--
+jQuery(document).ready(function () { if (!Modernizr.svgasimg) {
+  jQuery("img#logo").attr("src", "https://www.colorado.edu/sites/all/themes/homepage2019/logo.png");} });
+//--><!]]>
+  </script>
+  <script src="https://www.colorado.edu/sites/default/files/js/js_zIS_x1xbqFltcwF3fjcXxcv4isWWerwknsKFTlvI3KE.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"77bdf6c909","applicationID":"166418094","transactionName":"ZARbNksCWkRYUE1eW11OeAFNCltZFkZXR0FRDVARUQZQaA0DDWhaXAVcPUkCU1JmRVBSQw==","queueTime":0,"applicationTime":561,"atts":"SENYQAMYSUo=","errorBeacon":"bam.nr-data.net","agent":""}
+  </script>
+ </body>
+</html>
+
